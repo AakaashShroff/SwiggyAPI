@@ -9,6 +9,8 @@ PHONE_NUMBER is to be changed to your swiggy account number.
 
 Modify restaurant_dict based on your needs. The keys are the restaurant and values are the dishes it offers, the user input is a dish the user wants to have and the respective key(restaurant name) is used to run the script further.
 
+Note: for api.py you only need to change PHONE_NUMBER and ADDRESS_TO_SELECT
+
 Script additions made based on tests and thoughts:
 ----------------------------------------------------
 The script is well enough to handle a few pop up cases I encountered while testing and orders food like a charm.
@@ -28,7 +30,7 @@ Based on the dictionary you hard coded you can order the dishes with a single in
 Do not forget to have balance in your swiggy money. Enjoy :)
 
 -----------------------------------------------------
-Note: This script in my personal use will be further updated to use nltk to order food similar to input(typo errors cause a rerun to order successfully as value is not found in the dictionary). This will further be converted to a flask API which I might add here once done. This api will be integrated on my local server for my personal AI assistant to order food for me with a single voice command.
+Note: This script in my personal use will be further updated to use nltk/fuzzywuzzy to order food similar to input(typo errors cause a rerun to order successfully as value is not found in the dictionary). This will further be converted to a flask API which I might add here once done. This api will be integrated on my local server for my personal AI assistant to order food for me with a single voice command.
 
 
 ------------------------------------------------------
@@ -36,7 +38,7 @@ New Update:
 api.py is a new file that runs this as a flask api service.
 
 The new add ons along with it are:
-1. Handling one kind of popup with 'Continue' in it.
+1. Handling one extra kind of popup with 'Continue' in it that i missed out previously.
 2. Improved time efficiency
 3. Using Fuzzy Wuzzy to account for typos
 4. Ordering ability with a single post request
