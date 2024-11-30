@@ -25,7 +25,7 @@ Once you log in the first time successfully, you should see a login_cookies.json
 
 Based on the dictionary you hard coded you can order the dishes with a single input -  The dish you want. 
 
-Do not forget to have balance in your swiggy money.Enjoy :). 
+Do not forget to have balance in your swiggy money. Enjoy :)
 
 -----------------------------------------------------
 Note: This script in my personal use will be further updated to use nltk to order food similar to input(typo errors cause a rerun to order successfully as value is not found in the dictionary). This will further be converted to a flask API which I might add here once done. This api will be integrated on my local server for my personal AI assistant to order food for me with a single voice command.
