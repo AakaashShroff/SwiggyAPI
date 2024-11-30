@@ -29,3 +29,21 @@ Do not forget to have balance in your swiggy money. Enjoy :)
 
 -----------------------------------------------------
 Note: This script in my personal use will be further updated to use nltk to order food similar to input(typo errors cause a rerun to order successfully as value is not found in the dictionary). This will further be converted to a flask API which I might add here once done. This api will be integrated on my local server for my personal AI assistant to order food for me with a single voice command.
+
+
+------------------------------------------------------
+New Update:
+api.py is a new file that runs this as a flask api service.
+
+The new add ons along with it are:
+1. Handling one kind of popup with 'Continue' in it.
+2. Improved time efficiency
+3. Using Fuzzy Wuzzy to account for typos
+4. Ordering ability with a single post request
+
+Post Request Example: 
+
+curl -X POST http://localhost:8000/order \
+-H "Content-Type: application/json" \
+-d '{"dish": "Margherita Pizza"}'
+{"message":"Order placed for Margherita Pizza."}
